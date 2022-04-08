@@ -50,5 +50,7 @@ def run():
             print(rowstr.format(t, a_tan(t), a_rad(t), a_x(t,vx[-1],vy[-1]), a_y(t,vx[-1],vy[-1]),vx[-1],vy[-1]))
 
         prevx, prevy, prevvx, prevvy, prevax, prevay = newx,newy,newvx,newvy,newax,neway
+    plt.axhline(0,color='black') # x = 0
+    plt.axvline(0,color='black') # y = 0
     plt.plot(x,y)
     plt.show()
