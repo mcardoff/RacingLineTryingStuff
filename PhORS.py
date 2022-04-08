@@ -8,7 +8,7 @@ def a_tan(t):
     return (g/2) * min(1,t/k)
 
 def a_centripetal(t):
-    aval = at(t)
+    aval = a_tan(t)
     return np.sqrt(g*g - 4*aval*aval)
 
 def a_rad(t):
